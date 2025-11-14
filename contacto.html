@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Carolina Rajcic</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Ficha Personal</h1>
+                <p>Perfil de Estudiante</p>
+            </div>
+            <button id="modoBtn" class="modo-btn" aria-label="Cambiar modo claro/oscuro">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="perfil-card">
+                <div class="perfil-header">
+                    <img src="img/foto-perfil.jpeg" alt="Foto de Carolina Rajcic" class="foto-perfil">
+                    <h2>Carolina Rajcic</h2>
+                </div>
+
+                <nav class="menu-nav">
+                    <a href="index.html" class="nav-btn">HOME</a>
+                    <button class="nav-btn" onclick="window.open('https://carorajcic.github.io/homedeco-uade/', '_blank')">Local Comercial</button>
+                    <button class="nav-btn active">Contacto</button>
+                </nav>
+
+                <div class="contacto-section">
+                    <h3>Contacto</h3>
+                    
+                    <form id="contactoForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" class="form-input">
+                                <span class="error-message" id="errorNombre"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input">
+                                <span class="error-message" id="errorEmail"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comentarios">Comentarios</label>
+                            <textarea id="comentarios" name="comentarios" rows="5" class="form-input"></textarea>
+                            <span class="error-message" id="errorComentarios"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Todos los derechos reservados</p>
+            <a href="https://github.com/carorajcic/integrador-desarrollo-web-uade" target="_blank" class="github-link">
+                <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub" width="20" height="20">
+                Ver en GitHub
+            </a>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
